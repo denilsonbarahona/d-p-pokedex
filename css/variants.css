@@ -1,0 +1,51 @@
+.variants{
+    grid-area: variants;
+    display: grid;
+    grid-template-columns: 3.25rem 1fr;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.variants-enter, .variants-switch>*{
+    cursor: pointer;
+}
+
+.variants-enter:active, 
+.variants-switch>*:active{
+    transform: scale(.9);
+}
+
+.variants-enter{
+    inline-size: 3.25rem;
+    block-size: 3.25rem;
+    border: none;
+    background: var(--secondary);
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 0 #300F16;
+}
+
+.variants-switch {
+    display: flex;
+    gap: 1rem;
+}
+
+.variants-switch>*{
+    border: none;
+    inline-size: 2rem;
+    block-size: .5rem;
+    border-radius: .5rem;
+}
+
+.switch1 {
+    background: #FECB2F;
+    filter: drop-shadow(2px 2px #D2AB33);
+}
+
+
+.switch2 {
+    background: var(--secondary);
+    filter: drop-shadow(2px 2px #300F16);
+}
+
+

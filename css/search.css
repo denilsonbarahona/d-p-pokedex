@@ -1,0 +1,13 @@
+.search{
+    grid-area: search; 
+    display: flex;
+}
+
+.search input {
+    padding: .5rem;
+    font: var(--body1);
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: none;
+    flex-grow: 1;
+}
